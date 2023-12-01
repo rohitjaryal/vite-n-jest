@@ -1,15 +1,8 @@
-import {useState} from 'react'
 import './App.css'
+import Counter from "@/components/Counter.tsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-  return (
-    <>
-      <h1>Vite n Jest</h1>
-        <p>{count}</p>
-        <button onClick={()=>setCount((value)=>value+1)}>Add Count</button>
-    </>
-  )
+  return <Counter />
 }
 
 export default App
